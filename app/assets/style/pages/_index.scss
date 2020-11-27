@@ -1,13 +1,13 @@
 /*banner*/
 .banner{
-    background-image: url(../assets/images/banner.png);
+    background-image: url(./assets/images/banner.png);
     @include bg-img-cover-no-repeat;
     height: 100vh;
     color:$primary-dark;
     text-align: right;
     padding-right: 396px;
     @include pad{
-        background-image: url(../assets/images/banner-sm.png);
+        background-image: url(./assets/images/banner-sm.png);
         padding-right: 39px;
     }
     @include mobile{        
@@ -149,7 +149,7 @@
 }
 
 .series-icon-diamond{
-    background-image: url(../assets/images/icon-diamond.svg);
+    background-image: url(./assets/images/icon-diamond.svg);
     width: 48px;
     height: 37.73px;
     @include svg-icon-hover-setting;      
@@ -158,7 +158,7 @@
         height: 25.16px;
     }
     @include mobile{
-        background-image: url(../assets/images/icon-diamond-white.svg);
+        background-image: url(./assets/images/icon-diamond-white.svg);
         width: 32px;
         height: 25.16px;
     }
@@ -166,7 +166,7 @@
 
 .series-optical:hover{
     .series-icon-diamond{
-        background-image: url(../assets/images/icon-diamond-black.svg);
+        background-image: url(./assets/images/icon-diamond-black.svg);
     };
     h4{
         color:$black;
@@ -182,7 +182,7 @@
 };
 
 .series-icon-sun{
-    background-image: url(../assets/images/icon-sun.svg);
+    background-image: url(./assets/images/icon-sun.svg);
     width: 48px;
     height: 48px;
     @include svg-icon-hover-setting;      
@@ -191,14 +191,14 @@
         height: 32px;
     }
     @include mobile{
-        background-image: url(../assets/images/icon-sun-white.svg);
+        background-image: url(./assets/images/icon-sun-white.svg);
         width: 32px;
         height: 32px;
     }
 }
 .series-sunglasses:hover{
     .series-icon-sun{
-        background-image: url(../assets/images/icon-sun-black.svg);
+        background-image: url(./assets/images/icon-sun-black.svg);
     }
     h4{
         color:$black;
@@ -218,7 +218,7 @@
     };
 };
 .series-icon-thunder{
-    background-image: url(../assets/images/icon-thunder.svg);
+    background-image: url(./assets/images/icon-thunder.svg);
     width: 35.2px;
     height: 48px;
     @include svg-icon-hover-setting;      
@@ -227,14 +227,14 @@
         height: 32px;
     }
     @include mobile{
-        background-image: url(../assets/images/icon-thunder-white.svg);
+        background-image: url(./assets/images/icon-thunder-white.svg);
         width: 23px;
         height: 32px;
     }
 }
 .series-functional:hover {
     .series-icon-thunder{
-        background-image: url(../assets/images/icon-thunder-black.svg);
+        background-image: url(./assets/images/icon-thunder-black.svg);
     }
     h4{
         color:$black;
@@ -251,7 +251,7 @@
 
 /*block*/
 .jumbotron-fluid{
-    background-image: url(../assets/images/bg.png);
+    background-image: url(./assets/images/bg.png);
     @include bg-img-cover-no-repeat;
     background-position: center;
     height: auto;
@@ -265,7 +265,7 @@
         align-items: center;
     }
     .block-son{
-        background-image: url(../assets/images/product-8.png);
+        background-image: url(./assets/images/product-8.png);
         @include bg-img-cover-no-repeat;        
         width: 540px;
         height: 472px;
@@ -295,7 +295,7 @@
         }
     }  
     .block-daughter{
-        background-image: url(../assets/images/product-9.png);
+        background-image: url(./assets/images/product-9.png);
         @include bg-img-cover-no-repeat;        
         width: 540px;
         height: 472px;
