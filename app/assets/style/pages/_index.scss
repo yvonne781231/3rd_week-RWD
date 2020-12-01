@@ -2,16 +2,19 @@
 .banner{
     background-image: url(../images/banner.png);
     @include bg-img-cover-no-repeat;
-    height: 100vh;
+    height: 840px;
     color:$primary-dark;
     text-align: right;
-    padding-right: 396px;
     @include pad{
         background-image: url(../images/banner-sm.png);
-        padding-right: 39px;
     }
     @include mobile{        
-        padding-right: 15px;
+    }
+    .slogan{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
     }
     p{
         font-size: $font-size-lg;
@@ -36,7 +39,7 @@
 /*service*/
 .profession{
     @extend %silder-space;
-    .row{
+    .profession-group{
         padding:0 69px;
         align-items: baseline;
         @include pad{
@@ -46,16 +49,16 @@
             padding:0 54px;
         }
     }
-    .col{
-        max-width: 19%;
+    .profession-item{
+        width: 19%;
         padding: 0 auto;
         
         @include pad{
-            max-width: 35%;  
+            width: 45%;  
             margin-bottom:$margin-size-5;  
         };
         @include mobile{
-            max-width: 100%;            
+            width: 100%;            
         };
     }
     img{
@@ -127,7 +130,8 @@
     transition: all 0.5s ease-in;  
     @include mobile{
         padding:0px 0px;
-        position: absolute;        
+        position: absolute;  
+        justify-content:center;      
     }
     h4{
         text-transform:uppercase;
@@ -368,7 +372,9 @@
             max-width: 290px;
         }
         img{
-            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
         >a{
             text-decoration: none;
@@ -384,14 +390,14 @@
     .card-content{
         padding:16px;
         font-size: $font-size-sm;
-        :nth-child(1){
+        h4{
             margin-bottom: $margin-size-base;
         }
-        :nth-child(2){
+        p{
             font-size: $font-size-2;
             margin-bottom: $margin-size-2;
         }
-        :nth-child(3){
+        span{
             color:$lonely-dark;
         }
     }
@@ -428,7 +434,7 @@
             font-size: $font-size-base;
         }
     }
-    input{
+    input, textarea{
         width: 730px;
         font-size: $font-size-2;
         color:$primary-dark;

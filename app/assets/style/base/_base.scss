@@ -74,9 +74,11 @@ body{
     margin: 0 auto;
     padding: 0 15px;
     @include pad{
+        max-width:762px;
         padding:0 39px;
     }
     @include mobile{
+        max-width:352px;
         padding: 0 15px;
     }
 }

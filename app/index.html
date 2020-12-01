@@ -4,38 +4,38 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<div class="banner flex jucetify-flex-end align-items-cener">
-    <div class="slogan">
+<div class="banner">
+    <div class="container slogan">
         <p>Promise-Desert 2020 早春系列</p>
         <h2>看得清，才能看得遠</h2>
     </div>
 </div>
 
 <section class="container-fluid-light">
-    <div class="container profession text-align-center">
+    <div class="profession container text-align-center">
         <h3 class="h3 text-color-primary-dark">用專業的心，做專業的事</h3>
-        <div class="row flex flex-wrap jucetify-space-between">
-            <div class="col">
+        <ul class="profession-group flex flex-wrap jucetify-space-between">
+            <li class="profession-item">
                 <img src="assets/images/icon-dollar.svg" alt="單一價格">
                 <h4 class="text-color-primary">單一價格</h4>
                 <p>無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
-            </div>
-            <div class="col">
+            </li>
+            <li class="profession-item">
                 <img src="assets/images/icon-clock.svg" alt="20 分鐘即可取件">
                 <h4 class="text-color-primary">20 分鐘即可取件</h4>
                 <p>為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。</p>
-            </div>
-            <div class="col">
+            </li>
+            <li class="profession-item">
                 <img src="assets/images/icon-heart.svg" alt="安心售後服務">
                 <h4 class="text-color-primary">安心售後服務</h4>
                 <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
-            </div>
-            <div class="col">
+            </li>
+            <li class="profession-item">
                 <img src="assets/images/icon-glasses.svg" alt="關於鏡片">
                 <h4 class="text-color-primary">關於鏡片</h4>
                 <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
-            </div>
-        </div>
+            </li>
+        </ul>
     </div>
 </section>
 
@@ -98,45 +98,45 @@ current: index
         <li class="card-items">
             <a href="#">
                 <img src="assets/images/rec-1.png" alt="顧客推薦Jessy">
-                <ul class="card-content">
-                    <li>Jessy</li>
-                    <li>This is a wider card with supporting text below as a natural lead-in to additional content. This
-                        content is a little bit longer.</li>
-                    <li>Last updated 3 mins ago</li>
-                </ul>
+                <div class="card-content">
+                    <h4>Jessy</h4>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <span>Last updated 3 mins ago</span>
+                </div>
             </a>
         </li>
         <li class="card-items">
             <a href="#">
                 <img src="assets/images/rec-2.png" alt="顧客推薦Karen">
-                <ul class="card-content">
-                    <li>Karen</li>
-                    <li>This is a wider card with supporting text below as a natural lead-in to additional content. This
-                        content is a little bit longer.</li>
-                    <li>Last updated 3 mins ago</li>
-                </ul>
+                <div class="card-content">
+                    <h4>Karen</h4>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <span>Last updated 3 mins ago</span>
+                </div>
             </a>
         </li>
         <li class="card-items">
             <a href="#">
                 <img src="assets/images/rec-3.png" alt="顧客推薦Chelsea">
-                <ul class="card-content">
-                    <li></li>
-                    <li>This is a wider card with supporting text below as a natural lead-in to additional content. This
-                        content is a little bit longer.</li>
-                    <li>Last updated 3 mins ago</li>
-                </ul>
+                <div class="card-content">
+                    <h4>Chelsea</h4>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <span>Last updated 3 mins ago</span>
+                </div>
             </a>
         </li>
         <li class="card-items">
             <a href="#">
                 <img src="assets/images/rec-4.png" alt="顧客推薦Jane">
-                <ul class="card-content">
-                    <li>Jane</li>
-                    <li>This is a wider card with supporting text below as a natural lead-in to additional content. This
-                        content is a little bit longer.</li>
-                    <li>Last updated 3 mins agos</li>
-                </ul>
+                <div class="card-content">
+                    <h4>Jane</h4>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <span>Last updated 3 mins agos</span>
+                </div>
             </a>
         </li>
     </ul>
@@ -153,14 +153,13 @@ current: index
             <input type="text" id="name" name="name" placeholder="陳小明">
 
             <label for="phone">聯絡電話</label>
-            <input type="text" id="phone" name="phone" placeholder="0912-345-678">
+            <input type="tel" id="phone" name="phone" placeholder="0912-345-678">
 
             <label for="email">電子郵件</label>
-            <input type="text" id="email" name="email" placeholder="example@email.com">
+            <input type="email" id="email" name="email" placeholder="example@email.com">
 
             <label for="feedback">意見反應</label>
-            <input type="text" class="form-feedback" id="feedback" name="feedback" placeholder="請輸入您的意見">
-
+            <textarea name="feedback" id="feedback" class="form-feedback" placeholder="請輸入您的意見"></textarea>
             <div class="flex text-align-center form-check">
                 <input type="checkbox" class="form-checkbox" id="check" name="check">
                 <span>

@@ -8,9 +8,6 @@
 }
 
 .contacts{
-    .contacts-content{
-        width: 42%;
-    }
     padding: 4px 0;
     border-bottom: 1px solid #ffffff;
     li{
@@ -21,8 +18,12 @@
         @include mobile{
             display: none;
         }
-        a{
+        a{  display: block;
+            padding:0 24px;
             font-size: $font-size-2;
+            &:hover{
+                background-color: $primary;
+            }
         }
         margin-bottom: $margin-size-4;
     }
@@ -44,7 +45,7 @@
         }
     }
 .contacts-menu{
-    font-size: $font-size-2;
+    font-size: $font-size-4;
     @include pad{
         font-size: $font-size-md;
     }
@@ -65,11 +66,9 @@
 }
 .footer-infor{
     padding: 24px 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     @include mobile{
         flex-direction: row-reverse;
+        align-items:flex-end;
     }
     >a{
         @include pad{

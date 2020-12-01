@@ -1,10 +1,14 @@
 .header{
-    padding:30px 88px;
+    max-width: 1744px;
+    margin:0 auto;
+    padding: 0 88px;
     @include pad{
-        padding:30px 39px;
+        max-width: 690px;
+        padding: 0 39px;
     }
     @include mobile{
-        padding:0 0;
+        max-width: 100%;
+        padding: 0 0px;
     }
     .header-logo{
         @include mobile{
@@ -12,6 +16,7 @@
             padding:10px 0;
             }
         .logo{
+            display: block;
             width: 80px;
             height: 48.57px;
             background-image: url(../images/logo.png);
@@ -27,9 +32,10 @@
 }
 
 .navbar{
-    width:28%;
+    width:80%;
+    justify-content: flex-end;
     @include pad{
-        width:61%;
+        width:80%;
     }
     @include mobile{
         width: 100%;
@@ -38,17 +44,25 @@
         @include mobile{
             border:1px solid #fff;
             text-align: center;
-            width: 50%;
-            padding:8px 0;
-            &:hover{
-                background-color: $secondary;
-            }
+            width: 50%;          
         }
     }
     a{
         font-size: $font-size-md;
         line-height: $line-height;
-        @include underline-none-and-hover;
+        color: $white;
+        display: block;
+        padding:40px 32px; 
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+        &:hover{
+            background-color: $primary-dark;
         }
-    
+        @include pad{
+            padding:40px 20px; 
+        }
+        @include mobile{
+            padding:8px 0px;
+        }
+    }   
 }
