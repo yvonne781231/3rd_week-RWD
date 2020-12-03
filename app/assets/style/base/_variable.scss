@@ -7,6 +7,11 @@ $light:#FBF2F2;
 
 $lonely:#DEE2E6;
 $lonely-dark:#707070;
+$lonely-light:#DCDCDC;
+
+
+$coffee:#5F3E2D;
+$coffee-light:#B75929;
 
 $black:#000;
 $white:#fff;
@@ -32,6 +37,8 @@ $line-height:1.5;
 // padding-size
 $margin-size-base:8px;
 
+$margin-size-13:$margin-size-base*13; //104px
+$margin-size-9:$margin-size-base*9; //72px
 $margin-size-8:$margin-size-base*8; //64px
 $margin-size-7:$margin-size-base*7; //56px
 $margin-size-6:$margin-size-base*6; //48px
