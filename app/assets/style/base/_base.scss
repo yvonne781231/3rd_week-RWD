@@ -10,6 +10,9 @@ body{
 .flex{
     display: flex;
 }
+.flex-column{
+    flex-direction: column
+}
 .flex-wrap{
     flex-wrap: wrap;
 }
@@ -18,6 +21,9 @@ body{
 }
 .jucetify-center{
     justify-content: center;
+}
+.jucetify-flex-start{
+    justify-content: flex-start;
 }
 .jucetify-flex-end{
     justify-content: flex-end;
@@ -29,6 +35,9 @@ body{
 
 .align-items-cener{
     align-items: center;
+}
+.align-items-flex-end{
+    align-items: flex-end;
 }
 
 // color
@@ -70,16 +79,13 @@ body{
 }
 // grid
 .container{
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
     @include pad{
-        max-width:762px;
-        padding:0 39px;
+        max-width:684px;
     }
     @include mobile{
-        max-width:352px;
-        padding: 0 15px;
+        max-width:322px;
     }
 }
 %silder-space{
@@ -97,4 +103,10 @@ body{
 }
 .col-4{
     width: 31%;
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
 }
