@@ -89,11 +89,9 @@
     .card-items{
         margin-bottom: $margin-size-4;
         @include pad{
-            width: 48%;
             margin-bottom: $margin-size-3;
         }
         @include mobile{
-            width: 100%;
             margin-bottom: $margin-size-2;
             margin: 0 auto;
         }
