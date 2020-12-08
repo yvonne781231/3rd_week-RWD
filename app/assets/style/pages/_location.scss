@@ -1,39 +1,3 @@
-//location-header
-.location-banner{
-    background-image: url(../images/qa.png);
-    @include bg-img-cover-no-repeat;
-    background-position: center center;
-    height: 304px;
-
-    @include mobile{
-        height: 143px;
-    }
-    h2{
-        font-size: $font-size-8;
-        font-weight: bold;
-        text-align: left;
-        margin-right: $margin-size-3;
-        @include pad{
-            font-size: $font-size-6;
-            margin-right: $margin-size-2;
-        }
-        @include mobile{
-            font-size: 28px;
-            margin-right: $margin-size-base;
-        }
-    }
-    img{
-        max-width: 40px;
-        display: block;
-        @include pad{
-            max-width: 30px;
-        }
-        @include mobile{
-            max-width: 16px;
-        }
-    }
-}
-//location-main
 .location-form{
     padding-top:16px;
     padding-bottom:32px;
@@ -93,7 +57,6 @@
         }
         @include mobile{
             margin-bottom: $margin-size-2;
-            margin: 0 auto;
         }
         @include mobile-374{
             max-width: 290px;
@@ -104,7 +67,7 @@
             display: block;
         }
     }
-    h5{
+    h3{
         font-size: $font-size-3;
         padding: 12px 24px;
         border-bottom: 1px solid #00000020;

@@ -1,5 +1,5 @@
 /*banner*/
-.banner{
+.banner-index{
     background-image: url(../images/banner.png);
     @include bg-img-cover-no-repeat;
     height: 840px;
@@ -360,7 +360,6 @@
         @include mobile{
             width: 100%;
             margin-bottom: $margin-size-2;
-            margin: 0 auto;
         }
         @include mobile-374{
             max-width: 290px;
