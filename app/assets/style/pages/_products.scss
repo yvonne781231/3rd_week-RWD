@@ -87,10 +87,8 @@
 //products-optical
 .product-card{
     padding-top: 88px;
-    padding-bottom: 156px;
     @include pad{
         padding-top: 40px;
-        padding-bottom: 104px;
     }
     h3{
         font-size: 42px;
@@ -175,31 +173,4 @@
         :nth-child(2){
             background-color:$coffee-light;
         }        
-}
-.pages-btn{
-    font-size: 16px;
-    @include mobile{
-        font-size: 12px;
-    }    
-    a{
-        text-decoration: none;
-        color: #555555;
-        padding: 10px 12px;
-        border: 1px solid #555555;
-        &:hover{
-            background-color: $black;
-        }
-        @include mobile{
-            padding:8px 8px;
-        }
-    }
-    .active a{
-        background-color: $black;
-    }
-    :nth-last-child(1) a{
-        background-color: #F2F2F2;
-        &:hover{
-            background-color: $black;
-        }
-    }
 }

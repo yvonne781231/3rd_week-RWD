@@ -44,16 +44,32 @@ body{
         display: flex;
     }
 }
+.flex-md-column{
+    @include pad{
+        flex-direction: column
+    }    
+}
 .flex-md-wrap{
     @include pad{
         flex-wrap: wrap;
     }    
 }
 //flex-sm
+.flex-sm-column{
+    @include mobile{
+        flex-direction: column
+    }    
+}
 .flex-sm-wrap{
     @include mobile{
         flex-wrap: wrap;
     }
+}
+//display-none
+.display-mobile-none{
+    @include mobile{
+        display: none !important; 
+    }    
 }
 // color
 .container-fluid{
@@ -61,6 +77,9 @@ body{
 }
 .container-fluid-light{
     background-color: $light;
+}
+.container-fluid-primary-dark{
+    background-color: $primary-dark;
 }
 .text-color{
     color: $white;
@@ -70,6 +89,9 @@ body{
 }
 .text-color-primary-dark{
     color: $primary-dark;
+}
+.text-color-black{
+    color:$black;
 }
 // text
 .text-align-center{
@@ -118,25 +140,39 @@ body{
 
 .col-3{
     width: 23.25%;
-
 }
 .col-4{
     width: 31%;
-
 }
 .col-5{
     width: 38.75%;
-
+}
+.col-6{
+    width: 46.5%; 
 }
 
 .col-7{
     width: 54.25%;
-
 }
-
+.col-8{
+    width: 62%;
+}
+.col-9{
+    width: 69.75%;
+}
+.col-md-2{
+    @include pad{
+        width: 15.5%;
+    }
+}
 .col-md-6{
     @include pad{
         width: 46.5%; 
+    }
+}
+.col-md-10{
+    @include pad{
+        width: 77.5%;
     }
 }
 .col-md-12{
