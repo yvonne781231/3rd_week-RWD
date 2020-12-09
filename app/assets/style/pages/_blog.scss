@@ -139,8 +139,7 @@
         color: $primary;
     }
 }
-.blog-content-header{
-    
+.blog-content-header{    
     .card-tittle{
         h2{
             font-size: $font-size-6;
@@ -184,6 +183,7 @@
     }
 }
 .blog-content{
+    margin-bottom: $margin-size-2;
     img{
         width: 100%;
         display: block;
@@ -210,6 +210,7 @@
     }
     @include mobile{
         padding-top: 0px;
+        margin-bottom: $margin-size-7;
     }
     img{
         width: 48px;
@@ -238,6 +239,58 @@
         }
         @include mobile{
             margin-right: $margin-size-base;
+        }
+    }
+}
+.blog-content-footer{
+    margin-bottom: $margin-size-38;
+    @include pad{
+        margin-bottom: $margin-size-13;
+    }
+    @include mobile{
+        margin-bottom: $margin-size-5;
+    }
+    p{
+        font-size: $font-size-md;
+        @include pad{
+            font-size: $font-size-2;
+        }
+        @include mobile{
+            font-size: $font-size-sm;
+        }
+    }
+    img{
+        width: 24px;
+        height: auto;
+        display: block;
+        @include pad{
+            width: 20px;
+        }
+        @include mobile{
+            width: 16px;
+        }
+    }
+    .blog-share{
+        padding-bottom: 16px;
+        border-bottom: 1px solid $lonely-dark;
+        p,img{
+            margin-right: $margin-size-2;
+        }
+    }
+    .blog-pages {
+        padding-top: 24px;
+        @include pad{
+            padding-top: 16px;
+        }
+        @include mobile{
+            padding-top:8px;
+        }
+        a{
+            @include underline-none-and-hover;
+            color: $black;
+        }
+        p{
+            padding: 0 8px;
         }
     }
 }

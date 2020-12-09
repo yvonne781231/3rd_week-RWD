@@ -13,11 +13,11 @@ body{
 .flex-column{
     flex-direction: column
 }
-.flex-wrap{
-    flex-wrap: wrap;
-}
 .flex-row-reverse{
     flex-direction: row-reverse;
+}
+.flex-wrap{
+    flex-wrap: wrap;
 }
 .jucetify-center{
     justify-content: center;
@@ -55,6 +55,16 @@ body{
     }    
 }
 //flex-sm
+.flex-sm-default{
+    @include mobile{
+        flex-direction: row;
+    }    
+}
+.jucetify-sm-default{
+    @include mobile{
+        justify-content: flex-start;
+    }
+}
 .flex-sm-column{
     @include mobile{
         flex-direction: column
